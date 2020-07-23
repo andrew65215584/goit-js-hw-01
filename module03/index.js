@@ -1,21 +1,26 @@
 // ? task 1
 
 // const user = {
-//     name: 'Mango',
-//     age: 20,
-//     hobby: 'html',
-//     premium: true,
+// 	name: 'Mango',
+// 	age: 20,
+// 	hobby: 'html',
+// 	premium: true
 // };
 
 // user.mood = 'happy';
 // user.hobby = 'skydiving';
 // user.premium = false;
 
-// let res = Object.keys(user)
+// let keys = Object.keys(user);
 
-// for (res in user) {
+// for (let key of keys) {
+// 	console.log(` ${key} : ${user[key]} `);
+// }
 
-//     console.log(`${res}: ${user[res]}`)
+// // ! второй способ преебора
+
+// for (let i = 0; i < keys.length; i++) {
+//     console.log(`${keys[i]} : ${user[keys[i]]} `);
 // }
 
 // ? task 2
@@ -85,36 +90,36 @@
 
 // ? task 4
 
-const countTotalSalary = function(employees) {
-	let total = 0;
+// const countTotalSalary = function(employees) {
+// 	let total = 0;
 
-	for (let key in employees) {
-		total += employees[key];
-	}
+// 	for (let key in employees) {
+// 		total += employees[key];
+// 	}
 
-	return total;
-};
+// 	return total;
+// };
 
-/*
-   * Вызовы функции для проверки работоспособности твоей реализации.
-   */
-console.log(countTotalSalary({})); // 0
+// /*
+//    * Вызовы функции для проверки работоспособности твоей реализации.
+//    */
+// console.log(countTotalSalary({})); // 0
 
-console.log(
-	countTotalSalary({
-		mango: 100,
-		poly: 150,
-		alfred: 80
-	})
-); // 330
+// console.log(
+// 	countTotalSalary({
+// 		mango: 100,
+// 		poly: 150,
+// 		alfred: 80
+// 	})
+// ); // 330
 
-console.log(
-	countTotalSalary({
-		kiwi: 200,
-		lux: 50,
-		chelsy: 150
-	})
-); // 400
+// console.log(
+// 	countTotalSalary({
+// 		kiwi: 200,
+// 		lux: 50,
+// 		chelsy: 150
+// 	})
+// ); // 400
 
 // ? task 5
 
@@ -218,8 +223,7 @@ console.log(
 
 // console.log(calculateTotalPrice(products, 'Дроид')); // 2800
 
-
-//? task 8 
+//? task 8
 
 // /*
 //  * Типов транзацкий всего два.
