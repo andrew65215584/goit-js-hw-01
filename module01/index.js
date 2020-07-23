@@ -14,7 +14,7 @@
 // let total = 100;
 // let ordered = 50;
 
-// if (total > ordered ) {
+// if (total < ordered ) {
 //     console.log('На складе недостаточно товаров!')
 // }else {
 //     console.log("Заказ оформлен, с вами свяжется менеджер");
@@ -22,90 +22,80 @@
 
 //task 3 ------------------------------------------------------------
 
-// let message = prompt('Введите ваш пароль')
+// let message = prompt('Введите ваш пароль');
 // const ADMIN_PASSWORD = 'jqueryismyjam';
-
 // if (message === null) {
-//     message = 'Отменено пользователем!'
+// 	message = 'Отменено пользователем!';
+// } else if (message === ADMIN_PASSWORD) {
+// 	message = 'Добро пожаловать!';
+// } else {
+// 	message = 'Доступ запрещен, неверный пароль!';
 // }
 
-// else {
-
-//     if (message === ADMIN_PASSWORD) {
-//         message = 'Добро пожаловать!'
-//     }
-//     if (message !== ADMIN_PASSWORD) {
-//         message = 'Доступ запрещен, неверный пароль!'
-//     }
-
-// }
-
-// let show = alert(message);
+// alert(message);
 
 //task 4 ------------------------------------------------------------
 
 // let credits = 23580;
 // const pricePerDroid = 3000;
-// let totalPrice ;
+// let totalPrice;
 
-// let quantityOfDroid = prompt('Сколько дроидов Вы хотите купить?', '')
+// let quantityOfDroid = prompt('Сколько дроидов Вы хотите купить?', '');
+
+// totalPrice = quantityOfDroid * pricePerDroid;
 
 // if (quantityOfDroid === null) {
-
-//     alert('Отменено пользователем!') ;
+// 	alert('Отменено пользователем!');
+// } else if (totalPrice > credits) {
+// 	alert('Недостаточно средств на счету!');
+// } else if (totalPrice <= credits) {
+// 	credits = credits - totalPrice;
+// 	alert(`Вы купили ${quantityOfDroid} дроидов, на счету осталось ${credits} кредитов.`);
 // }
-
-// else {
-
-//     totalPrice = quantityOfDroid * pricePerDroid;
-
-//     if ( totalPrice > credits ) {
-//         alert('Недостаточно средств на счету!') ;
-
-//     }
-
-//     if ( totalPrice <= credits ) {
-
-//         credits = credits -totalPrice ;
-//         alert(`Вы купили ${quantityOfDroid} дроидов, на счету осталось ${credits} кредитов.`) ;
-
-//     }
-
-// }
-
-// console.log('quantityOfDroid', quantityOfDroid)
-// console.log('totalPrice', totalPrice)
-// console.log('credits' , credits)
 
 //task 5 ------------------------------------------------------------
 
 // let country = prompt('Введите вашу страну', '')
-// country = country.toLocaleLowerCase()
 
-// switch (country) {
+// let price;
+// let countryName;
+// if (country === null) {
+//     alert("Отменено пользователем")
+// } else {
+//     country = country.toLocaleLowerCase()
 
-//     case 'китай':
-//         alert(`'Доставка в Китай будет стоить 100 кредитов'`);
-//         break;
+//     switch (country) {
 
-//     case 'чили':
-//         alert(`'Доставка в Чили будет стоить 250 кредитов'`);
-//          break;
+//         case 'китай':
+//             countryName = 'Китай';
+//             price = 100;
+//             break;
 
-//     case 'австралия':
-//          alert(`'Доставка в Австралия будет стоить  кредитов'`);
-//          break;
+//         case 'чили':
+//             countryName = 'Чили';
+//             price = 250;
+//             break;
 
-//     case 'индия':
-//          alert(`'Доставка в Индия будет стоить 80 кредитов'`);
-//          break;
+//         case 'австралия':
+//             countryName = 'Австралия';
+//             price = 170;
+//             break;
 
-//     case 'ямайка':
-//          alert(`'Доставка в Ямайка будет стоить 120 кредитов'`);
-//          break;
+//         case 'индия':
+//             countryName = 'Индия';
+//             price = 80;
+//             break;
 
-//     default : alert('В вашей стране доставка не доступна');
+//         case 'ямайка':
+//             countryName = 'Ямайка';
+//             price = 120;
+//             break;
 
+//         default: alert('В вашей стране доставка не доступна');
+
+//     }
+
+//     countryName ? alert(`Доставка в ${countryName} будет стоить ${price} кредитов`) : "";
 // }
 
 // console.log('country: ',country)
@@ -114,19 +104,29 @@
 
 // let input;
 // let total = 0;
+// let message; 
 
-// while (true){
 
-//     input = prompt('введите число', '')
 
-//     total += Number(input)
 
-//     if (input === null){
-//         alert(`Общая сумма чисел равна ${total}`)
-//         break;
-//     }
+// while (input !== null) {
+// 	input = prompt('введите число');
 
+// 	if (!isNaN(input)) {
+// 		total += +input;
+		
+// 	} else {
+// 		alert('Введено не число ')
+// 	}
+
+	
 // }
 
-// console.log(input)
-// console.log(total)
+// if (total === 0) {
+// 	alert(`Пользователь отменил`)
+// } else {
+// 	alert(`Общая сумма чисел равна ${total}`);
+// }
+
+
+
