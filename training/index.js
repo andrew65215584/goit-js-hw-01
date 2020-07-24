@@ -98,8 +98,6 @@
 
 // fizzBazz(133);
 
-
-
 // const fizzBuzz = function (n) {
 //     for (let i = 1; i <= n; i += 1) {
 //         if (i % 3 && i % 5) {
@@ -154,3 +152,12 @@
 // alert(calculator.sum());
 // alert(calculator.mul());
 // console.log(calculator);
+
+const target = {
+	id: 24,
+	isOnline: true,
+	...{ name: 'Mango', age: 2 },
+	...{ age: 7, isOnline: false }
+};
+
+console.log(target);
