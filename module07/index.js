@@ -16,7 +16,6 @@
 // const ingredients = [ 'Картошка', 'Грибы', 'Чеснок', 'Помидоры', 'Зелень', 'Приправы' ];
 
 // const result = ingredients.map((el) => {
-// 	console.log(el);
 // 	let li = document.createElement('li');
 // 	li.textContent = el;
 // 	return li
@@ -112,4 +111,16 @@
 // 	} else if (event.target.value.length < +inputLength) {
 // 		input.classList.add('invalid');
 // 	}
+// });
+
+// ? task 7
+
+// const input = document.querySelector('#font-size-control');
+// const text = document.querySelector('#text');
+// console.log(text);
+// console.log(input);
+// // let textContentOfText = text.style.fontSize
+
+// input.addEventListener('input', (event) => {
+// 	text.style.fontSize = `${event.target.value}px`;
 // });
