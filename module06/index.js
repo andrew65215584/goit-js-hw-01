@@ -30,7 +30,7 @@ import users from './users.js';
 
 // const getUsersWithGender = (users, gender) => {
 //     let res = users.filter(user => user.gender === gender)
-//     console.log(res);
+    
 
 //     let resultWithName = res.map(user => user.name)
 //     return resultWithName

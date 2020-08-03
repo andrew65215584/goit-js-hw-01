@@ -442,3 +442,136 @@
 // };
 
 // console.log(camelC("Привет"));
+
+// ! modul 7
+
+// 'use strict';
+// let body = document.querySelector('body');
+// let box = document.createElement('div');
+// body.append(box);
+// // body.append(img);
+// // let img = document.createElement('img');
+// // ______________STYLES
+// // box.style.width = '50px';
+// // box.style.height = '50px';
+// // box.style.backgroundColor = 'orange';
+// // box.style.margin = '0 auto';
+// box.setAttribute('class', 'box');
+// // img.setAttribute('src', './racoon.webp');
+// // img.setAttribute('alt', 'racoon');
+// // box.setAttribute('class', 'bluebox');
+// // box.classList.add('box', 'box2');
+// // box.classList.remove('box2');
+// for (let i = 0; i < 20; i++) {
+//     let smallBox = document.createElement('div');
+//     box.append(smallBox);
+//     smallBox.classList.add('smallBox');
+//     smallBox.style.backgroundColor =
+//         `rgb(${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)},${Math.round(Math.random() * 255)} )`;
+// }
+
+// ? task
+
+// const trainingBox = document.querySelector('.training-box');
+
+// let a = '1';
+// let b = '2';
+
+// const first = document.createElement('p');
+// const second = document.createElement('p');
+
+// trainingBox.append(first);
+// trainingBox.append(second);
+
+// console.log(trainingBox);
+
+// first.classList.add('first-item');
+// second.classList.add('second-item');
+
+// trainingBox.style.display = 'flex';
+
+// first.style.width = '40px';
+// first.style.height = '40px';
+// first.style.display = 'flex';
+// first.style.backgroundColor = 'red';
+// first.textContent = a;
+// first.style.marginRight = '20px';
+// first.style.alignItems = 'center';
+// first.style.justifyContent = 'center';
+
+// second.style.width = '40px';
+// second.style.height = '40px';
+// second.style.display = 'flex';
+// second.style.backgroundColor = 'blue';
+// second.textContent = b;
+// second.style.alignItems = 'center';
+// second.style.justifyContent = 'center';
+
+// first.addEventListener('click', () => {
+// 	if (first.textContent === a) {
+// 		first.textContent = b;
+// 		second.textContent = a;
+// 	} else {
+// 		first.textContent = a;
+// 		second.textContent = b;
+// 	}
+// });
+
+// second.addEventListener('click', () => {
+// 	if (first.textContent === a) {
+// 		first.textContent = b;
+// 		second.textContent = a;
+// 	} else {
+// 		first.textContent = a;
+// 		second.textContent = b;
+// 	}
+// });
+
+// ? next task
+
+// Сделайте текстовый инпут который принимает значение
+// цвета и меняет цвет бекграунда для body
+
+// let bodyRef = document.querySelector("body");
+
+// let input = document.createElement("input")
+// bodyRef.prepend(input)
+
+// input.addEventListener("change", (e) => {
+//     bodyRef.style.background = e.target.value
+// })
+
+// ? next task
+
+// При нажатии на кнопку создаётся квадрат, при изменение инпута(range) - меняется его размер(размер грани должен быть больше 100 пикселей)
+// При нажатии на вторую кнопку - квадрат удаляется
+
+
+
+// ? next task 
+// ! Счётчик
+
+// const mainFunction = function () {
+//     let counterValue = 0;
+
+//     let increment = function () {
+//         counterValue++;
+//         console.log(counterValue);
+//     };
+
+//     let decrement = function () {
+//         counterValue--;
+//         console.log(counterValue);
+//     };
+
+
+//     return { increment, decrement }
+
+
+// };
+
+// let counterOne = mainFunction();
+// counterOne.increment()
+// counterOne.increment()
+// counterOne.increment()
+// counterOne.increment()
