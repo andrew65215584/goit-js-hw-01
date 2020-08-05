@@ -48,35 +48,48 @@
 
 // const gallery = document.querySelector('#gallery');
 // console.log(gallery);
-// gallery.style.display = "flex"
-// gallery.style.flex
+// gallery.style.display = 'flex';
 
-// images.forEach((el) => {
-// 	gallery.insertAdjacentHTML('afterbegin', `<li> <img src="${el.url}" alt="${el.alt} width="300px height="300px"> </li>`);
+// let arr = images.map((el) => {
+// 	return `<li> <img src="${el.url}" alt="${el.alt} width="300px height="300px"> </li>`;
 // });
 
-// const galleryItem = document.querySelectorAll('#gallery > li')
+// gallery.insertAdjacentHTML('afterbegin', arr.join(' '));
+
+// const galleryItem = document.querySelectorAll('#gallery > li');
 // console.log(galleryItem);
 
-// galleryItem.forEach(el => {
-
-//     el.classList.add("gallery-item")
-//     el.style.margin = "20px"
-// })
+// galleryItem.forEach((el) => {
+// 	el.classList.add('gallery-item');
+// 	el.style.margin = '20px';
+// });
 
 // ? task 4
 
 // let counterValue = 0;
 
 // let increment = function() {
-// 	counterValue++;
-// 	valueRef.textContent = counterValue;
+// 	updateCounterValue("increment");
+// 	updateViewValue();
 // };
 
 // let decrement = function() {
-// 	counterValue--;
-// 	valueRef.textContent = counterValue;
+// 	updateCounterValue("decrement");
+// 	updateViewValue();
 // };
+
+// function updateViewValue() {
+// 	valueRef.textContent = counterValue;
+// }
+
+// function updateCounterValue(str) {
+// 	if (str === 'increment') {
+// 		counterValue++
+// 	} else {
+// 		counterValue--
+// 	}
+
+// }
 
 // const decrementRef = document.querySelector('.decrement');
 // const incrementRef = document.querySelector('.increment');
@@ -84,8 +97,6 @@
 
 // decrementRef.addEventListener('click', decrement);
 // incrementRef.addEventListener('click', increment);
-
-// console.log(increment());
 
 // ? task 5
 
@@ -124,3 +135,22 @@
 // input.addEventListener('input', (event) => {
 // 	text.style.fontSize = `${event.target.value}px`;
 // });
+
+// ? task 8
+// const controls = document.querySelector('.controls');
+// const input = document.querySelector('.input-controls');
+// const boxes = document.querySelector('#boxes');
+
+// let myInput = input.addEventListener('input', (event) => {
+// 	let inputValue = +event.target.value;
+// 	return inputValue;
+// });
+
+// console.log(myInput);
+
+// for (let i = 0; i < inputValue; i++) {
+//     let div = document.createElement('div')
+//     div.classList.add('div-element')
+//     controls.append(div)
+//     console.log(inputValue[i]);
+// }
