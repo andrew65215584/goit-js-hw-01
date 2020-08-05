@@ -3,10 +3,7 @@
 // const itemRefs = document.querySelectorAll('.item');
 // console.log(`В списке ${itemRefs.length} категории`);
 
-// console.log(itemRefs);
-// // Категория: ${ item.children[0].textContent }
-
-// const titleRef = itemRefs.forEach(item => console.log(`Категория: ${item.children[0].textContent }, количество елементов  ${item.children.length}`))
+// const titleRef = itemRefs.forEach(item => console.log(`Категория: ${item.children[0].textContent}, количество елементов  ${item.querySelector("ul").children.length}`))
 
 //? task 2
 // Напиши скрипт, который для каждого элемента массива ingredients создаст отдельный li,
