@@ -1,0 +1,45 @@
+.btn {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+}
+
+.rezult {
+    width: 20px;
+    height: 20px;
+    outline: 2px solid red;
+    display: inline-block
+}
+
+
+form {
+    margin: 20px;
+  
+}
+
+form > input {
+    margin-right: 20px;
+}
+
+.form-rezult {
+    width: 200px;
+    height: 20px;
+    outline: 2px solid red;
+}
+
+.photo-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    
+    outline: 2px solid red;
+}
+
+img {
+    display: block;
+}
+
+.photo-item{
+   
+   width: calc((100% - 30px) / 5)
+}

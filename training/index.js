@@ -546,9 +546,7 @@
 // При нажатии на кнопку создаётся квадрат, при изменение инпута(range) - меняется его размер(размер грани должен быть больше 100 пикселей)
 // При нажатии на вторую кнопку - квадрат удаляется
 
-
-
-// ? next task 
+// ? next task
 // ! Счётчик
 
 // const mainFunction = function () {
@@ -564,9 +562,7 @@
 //         console.log(counterValue);
 //     };
 
-
 //     return { increment, decrement }
-
 
 // };
 
@@ -575,3 +571,69 @@
 // counterOne.increment()
 // counterOne.increment()
 // counterOne.increment()
+
+//?   Напишите скрипт который реализует следующий функционал.
+//?   Есть кнопка с классом button, текст которой отображает
+//?   кол-во раз которое по ней кликнули, обновляется при каждом клике.
+
+// const button = document.querySelector('.button');
+// console.log(button);
+// const trainingText = document.querySelector('.training-text');
+// console.log(trainingText);
+
+// let counter = 0;
+
+// let increment = function() {
+// 	counter++;
+// 	trainingText.textContent = counter;
+// };
+
+// button.addEventListener('click', increment);
+
+// ?  Даны 2 инпута, абзац и кнопка. По нажатию на кнопку
+// ?  получите числа которые бьудут введены в инпуты и запишите их сумму в span.result.
+
+// const firstInput = document.querySelector('.first-input');
+// const secondInput = document.querySelector('.second-input');
+// const button = document.querySelector('.btn');
+// const rezult = document.querySelector('.rezult');
+
+// const getRezult = function() {
+// 	let totalSum = 0;
+
+// 	totalSum = Number(firstInput.value) + Number(secondInput.value);
+// 	rezult.textContent = totalSum;
+// };
+
+// button.addEventListener('click', getRezult);
+
+//?   Есть форма с набором радиокнопок. Пользователь выбирает вариант ответа,
+//?   после чего нажимает кнопку "Submit" и происходит отправка формы.
+//?   При отправке формы:
+//?     - не должна перезагружаться страница
+//?     - необходимо получить выбранную опцию и вывести в параграф с классом .result
+
+// const btn = document.querySelector('.form-button');
+// const input = document.querySelectorAll('.form-input');
+// const rezult = document.querySelector('.form-rezult');
+
+// btn.addEventListener('click', (event) => {
+// 	event.preventDefault();
+
+// 	input.forEach((el) => {
+//         if (el.checked) {
+//             rezult.innerHTML= " "
+//             rezult.textContent = el.id;
+//             console.log(el.id);
+// 		}
+// 	});
+// });
+
+// const ul = document.querySelector(".photo-list")
+// console.log(ul);
+
+// for (let i = 1000; i < 1010; i++){
+    
+//     ul.innerHTML += `<li class="photo-item"><img src="https://picsum.photos/id/${i}/200/300" alt="" width="400" height="400"/></li>`
+
+// }
